@@ -1,0 +1,473 @@
+/* this CSS code adjust the whole website 
+	edges
+*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* this CSS code will effect all the body of our HTML code 
+	menu-bar, background, logos, images, everything
+*/
+body {			
+	background-image: url(1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: century gothic;
+	width: 100%;
+	height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+.TTT-logo {
+	width: 149px;
+	position: fixed;
+	height: auto;
+	margin-top: 12px;
+	margin-left: 120px;
+}
+/* the start point of menu-bar CSS effecting and designing,
+	this CSS effect is for the whole menu-bar
+*/
+.menu-bar {
+	text-align: center;
+	background: #004e98;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	width: 100%;
+	position: fixed;
+}
+/* this CSS code is to style the UL */
+.menu-bar ul {
+	width: ;
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+/* this CSS code is to style the UL items */
+.menu-bar ul li {
+	margin-right: 0px;
+	margin-top: 10px;
+	padding: 15px;
+}
+/* this CSS code is to style the UL items 
+	when i move my mouse pointer on each items
+*/
+.menu-bar ul li:hover {
+	background-color: transparent;
+	border-radius: none;
+}
+/* this CSS code is to style the UL items link (</a>) tag*/
+.menu-bar ul li a {
+	text-decoration: none;
+	color: #fff;
+	transition: 0.4s ease-in-out;
+}
+/* this CSS code is to style the UL items lin (</a>) tag 
+	when i move my mouse pointer on each items
+*/
+.menu-bar ul li a:hover {
+	text-decoration: none;
+	color: #0099cc;
+}
+/* this CSS code is to style the sub-menu 
+	when we move the mouse over the main menu (menu-bar) it will display the CSS style on that sub-menu
+*/
+.sub-menu {
+	display: none;
+}
+/* CSS code for the sub-menu UL items hoverable effect 
+	when moving mouse over the sub-menu
+*/
+.menu-bar ul li:hover .sub-menu {
+	display: block;
+	position: fixed;
+	background: #999999;
+	border-top: 3px solid #fff;
+	margin-top: 5px;
+	margin-left: -15px;
+}
+/* this CSS code is for sub-menu UL style 
+	when moving mouse over UL 
+*/
+.menu-bar ul li:hover .sub-menu ul {
+	display: block;
+	margin: 10px;
+	font-size: 15px;
+}
+/* this CSS code is for sub-menu UL style 
+	when moving mouse over UL items
+*/
+.menu-bar ul li:hover .sub-menu ul li {
+	width: 230px;
+	line-height: 13px;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+/* this CSS code is to remove the last line 
+	or the last bottom border from the last UL item 
+*/
+.menu-bar ul li:hover .sub-menu ul li:last-child {
+	border-bottom: none;
+}
+/* this CSS code is to style UL (</a>) tag or link */
+.menu-bar ul li:hover .sub-menu ul li a {
+	color: #fff;
+	transition: none;
+}
+/* this CSS code is to style UL (</a>) tag or link 
+	a hoverable effect when move the mouse over each items
+*/
+.menu-bar ul li:hover .sub-menu ul li a:hover {
+	color: #004E98;
+}
+/* this CSS code is to style the sub-menu-1 (sub-menu of sub-menu) 
+	when we move the mouse over the (sub-menu) it will display the CSS style on that sub-menu-1
+*/
+.sub-menu-1 {
+	display: none;
+}
+/* CSS code for the sub-menu-1 UL items hoverable effect 
+	when moving mouse over the sub-menu
+*/
+.hover-mouse:hover .sub-menu-1 {
+	position: fixed;
+	width: auto;
+	display: block;
+	margin-top: -20px;
+	margin-left: 185px;
+	background-color: ;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* this CSS code is for sub-menu-1 UL style 
+	when moving mouse over UL 
+*/
+.menu-bar ul li:hover .sub-menu-1 {
+	background: #999999;
+	border-top: 3px solid #fff;
+}
+/* this CSS code is to style UL (</a>) tag or link */
+.menu-bar ul li:hover .sub-menu-1 ul li a {
+	color: #fff;
+}
+/* styling the right arrow ICON */
+.fa-angle-right {
+	color: #fff;
+	margin-left: 30px;
+}
+/* styling the down arrow ICON*/
+.fa-angle-down {
+	color: #fff;
+	font-weight: bold;
+}
+/* styling the down arrow ICON with hoverable effect 
+	when moving mouse over the ICON
+*/
+.menu-bar ul li:hover .fa-angle-down {
+	color: #999999;
+	transition: 0.5s ease-in-out;
+}
+/* start of the website footer styling */
+/* CSS code for the styling of the container of the footer
+	(container) that contains all the footer stuff in it */
+.container {
+	max-width: 1170px;
+	margin: 0;
+}
+/* row is also the same as the container of the footer 
+	that contains all the footer stuff in it */
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+/* removing the style of the UL from the footer (</a>) or (link) */
+ul{
+	list-style: none;
+}
+/* this CSS code is for styling of the footer (overall footer) */
+.footer{
+	background-color: #004e98;
+    padding: 10% 0;
+	margin-top: 100%;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+}
+/* CSS code for the adding effect to the footer column */
+.footer-column {
+   width: 25%;
+   padding: 0 15px;
+}
+/* CSS code for the styling of the footer-logo (the logo that is located
+	on the footer */
+.footer-logo {
+	width: 149px;
+	position: absolute;
+	height: auto;
+	margin-top: -5%;
+	margin-left: 105px;
+}
+/* CSS code for the styling of the footer-paragraph */
+.footer-column p {
+	font-size: 14px;
+	text-align: justify;
+	color: #ffffff;
+	text-transform: ;
+	font-family: century gothic;
+	display: inline-block;
+	line-height: 1.3em;
+	width: 350px;
+	word-spacing: 0.5px;
+	margin-left: 105px;
+	margin-top: 0px;
+}
+/* CSS code for the heading styling (</h4>) of the (</a>) tag or link */
+.footer-column-1 h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	margin-top: 15px;
+	position: relative;
+	font-weight: bold;
+	margin-left: 300px;
+}
+/* styling of the line that is located on the top of the 
+	the (</h4>) horizontal line */
+.footer-column-1 h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -10px;
+	background-color: #f37224;
+	height: 2px;
+	box-sizing: border-box;
+	width: 200px;
+}
+/* tha padding style for the last (</a>) tag on the footer */
+.footer-column-1 ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+/* CSS code for the styling of the (</a>) tag or UL items or link */
+.footer-column-1 ul li a {
+	font-size: 14px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+	margin-left: 300px;
+}
+/* hoverable effect for the (</a>) tag or UL items */
+.footer-column-1 ul li a:hover {
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-column-1 .fa {
+	margin-right: 8px;
+}
+/* CSS code for the another heading (</h4>) column on the footer*/
+.footer-column-2 h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	margin-top: 15px;
+	font-weight: bold;
+	position: relative;
+	margin-left: 120px;
+}
+/* styling of the line that is located on the top of the 
+	the (</h4>) horizontal line */
+.footer-column-2 h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -10px;
+	background-color: #f37224;
+	height: 2px;
+	box-sizing: border-box;
+	width: 200px;
+}
+/* tha padding style for the last (</a>) tag on the footer */
+.footer-column-2 ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+/* CSS code for the styling of the (</a>) tag or UL items or link */
+.footer-column-2 ul li a {
+	font-size: 14px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+	margin-left: 120px;
+	position: relative;
+	top: 0px;
+}
+/* hoverable effect for the (</a>) tag or UL items */
+.footer-column-2 ul li a:hover {
+	color: #ffffff;
+	padding-left: 8px;
+}
+/* CSS code for the line in footer (the straight line)
+	in the bottom of the container and row and column 
+*/
+.footer::after {
+	content: '';
+	position: absolute;
+	left: 120px;
+	top: 75%;
+	background-color: #fff;
+	height: 1px;
+	box-sizing: border-box;
+	width: 80%;
+}
+/* Address is the part that is with the italic font style 
+	in the bottom left corner of the footer (discribe the developer details)
+*/
+address {
+	position: absolute;
+	left: 120px;
+	margin-top: 30px;
+	font-size: 12px;
+	font-family: century gothic;
+	color: #fff;
+}
+/* Address link or (</a>) tag */
+address a {
+	text-decoration: underline;
+	color: #fff;
+}
+/* copyright statement in the bottom right cornerof the webpage */
+.footer-copyright {
+	position: absolute;
+	right: 150px;
+	margin-top: 35px;
+	font-size: 12px;
+	font-family: century gothic;
+	color: #fff;
+}
+/* privacy statement in the bottom and left corner of the webpage*/
+.footer-terms {
+	position: absolute;
+	left: 40%;
+	margin-top: 35px;
+	font-size: 12px;
+	font-family: century gothic;
+	color: #fff;
+}
+/* hoverable CSS effect for the button that is created for the website
+	button that is located at the middle of the webpage or content of the webpage
+*/
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #004e98;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	padding: 15px;
+	width: 150px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin-left: 120px;
+}
+/* CSS code for the span or the text that is in (Read More button)*/
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+/* button style for (</a>) part of the button*/
+.button a {
+	color: #fff;
+	text-decoration: none;
+}
+/* button after is the mark or (Double Semi Brackets) that is 
+	visible when mouse goes over the button
+*/
+.button span::after {
+	content: '»';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+/* hoverable effect for the span part of the button (between the button text and button ::after)
+	space between the text and mark
+*/
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span::after {
+	opacity: 1;
+	right: 0;
+}
+/* this is the content of the webpage that is in the middle of the website*/
+.content-paragraph {
+	margin-left: 120px;
+	padding-bottom: 25px;
+	font-family: verdana;
+	word-spacing: 0.5px;
+	line-height: 30px;
+	text-align: justify;
+	width: 50%;
+	margin-top: 1%;
+	font-size: 14px;
+	color: #fff;
+}
+/* this is the content heading or (</h1>)*/
+.content h1 {
+	font-family: century gothic;
+	font-size: 30px;
+	margin-left: 120px;
+	margin-top: 9%;
+	color: #fff;
+}
+/* CSS code for the styling of the Socials links (Facebook, Twitter, Linkedin, WhatsApp, Youtube)*/
+.footer-column-3 {
+	margin-left: 79%;
+	margin-top: -4%;
+	word-spacing: 5px;
+}
+/* style of the (</a>) tag for the social links*/
+.footer-column-3 a {
+	display: inline-block;
+	height: 40px;
+	width: 20px;
+	background-color: ;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fff;
+	transition: all 0.5s ease;
+	position: relative;
+}
+/* hoverable style of CSS for the social links 
+	when move the mouse over the social links 
+*/
+.footer-column-3 a:hover {
+	color: #f37224;
+	background-color: ;
+}
+
+
+
+
+
+
